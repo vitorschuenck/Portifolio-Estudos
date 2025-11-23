@@ -1,0 +1,273 @@
+body {
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: center;
+  /*  border-bottom: 1px solid black; */
+  height: 10vh;
+  align-items: center;
+  padding: 0rem 1rem;
+  position: fixed;
+  width: 100%;
+  color: white;
+  background-color: #17281E;
+
+}
+
+ul {
+  display: flex;
+  gap: 0rem 1rem;
+  justify-content: center;
+}
+
+li {
+  list-style-type: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  border-top: 3px solid transparent;
+}
+
+li a {
+  color: white;
+  text-decoration: none;
+}
+
+li:hover {
+  transition: all 0.3s;
+  border-top-color: rgb(168, 168, 168);
+}
+
+.conteudo {
+  display: flex;
+  flex-direction: column;
+  background-color: #17281E;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  color: #d8dad6;
+}
+
+.botao {
+  display: block;
+  position: fixed;
+  background-color: rgb(68, 205, 68);
+  padding: 1rem;
+  z-index: 999;
+  /* trazer pra cima, profundidade */
+  bottom: 20px;
+  right: 20px;
+  border-radius: 50%;
+  color: white;
+  border: none;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.598);
+
+}
+
+svg {
+  width: 32px;
+  height: 32px;
+}
+
+.botao a {
+  color: inherit;
+  /* herda a cor do Pai */
+}
+
+.instagram {
+  color: white;
+  border: none;
+  background-color: transparent;
+}
+
+.instagram a {
+  color: inherit;
+}
+
+.conteudo2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #17281E;
+  height: 100vh;
+  gap: 2rem;
+  color: #d8dad6;
+  padding: 10px;
+}
+
+.conteudo2 p {
+  margin-right: 50px;
+}
+
+.conteudo2-img {
+  margin-left: 100px;
+}
+
+.conteudo2-img img {
+  width: 400px;
+  border-radius: 7px;
+}
+
+.botaosabermais {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.botaosabermais button {
+  padding: 10px;
+  margin: none;
+  background-color: #E8A81B;
+  color: #333333;
+  font-weight: bold;
+  font-size: medium;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.598);
+  border-radius: 4px;
+  border: none;
+}
+
+.botaosabermais button:hover {
+  background-color: #c48d16;
+}
+
+.conteudo3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #17281E;
+  height: 100vh;
+  gap: 2rem;
+  color: #d8dad6;
+  padding: 10px;
+}
+
+.conteudo3 .titulo-serv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.conteudo3 .serv1 {
+  border: #E8A81B solid;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px;
+  width: 500px;
+  height: 150px;
+}
+
+.conteudo3 .serv1 h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 7px;
+  text-decoration: underline;
+}
+
+.conteudo3 .serv1 p {
+  padding: 10px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.conteudo3 .serv2 {
+  border: #E8A81B solid;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px;
+  width: 500px;
+  height: 150px;
+}
+
+.conteudo3 .serv2 h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 7px;
+  text-decoration: underline;
+}
+
+.conteudo3 .serv2 p {
+  padding: 10px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.servicos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 10px;
+}
+
+.contato {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #17281E;
+  height: 100vh;
+  gap: 2rem;
+  color: #d8dad6;
+  padding: 10px;
+}
+
+.linkedin {
+  color: white;
+  border: none;
+  background-color: transparent;
+  margin: 10px;
+}
+
+.linkedin a {
+  color: inherit;
+}
+
+.wpp {
+  color: white;
+  border: none;
+  background-color: transparent;
+  margin: 10px;
+}
+
+.wpp a {
+  color: inherit;
+}
+
+.insta2 {
+  color: white;
+  border: none;
+  background-color: transparent;
+  margin: 10px;
+}
+
+.insta2 a {
+  color: inherit;
+}
+
+
+@keyframes pop-out {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.botaosabermais {
+  animation: pop-out 1s infinite;
+  -webkit-animation: pop-out 1s infinite;
+}
